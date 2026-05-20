@@ -358,10 +358,10 @@ app.post('/api/routes', async (req, res) => {
 });
 
 // ================================================================
-//  CATCH-ALL — serve index.html
+//  CATCH-ALL — serve shadownet.html
 // ================================================================
 app.get('*', (_req, res) => {
-  res.sendFile(path.join(__dirname, 'index.html'));
+  res.sendFile(path.join(__dirname, 'shadownet.html'));
 });
 
 // ================================================================
